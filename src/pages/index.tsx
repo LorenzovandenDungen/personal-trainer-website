@@ -8,35 +8,35 @@ const Home: React.FC = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <section className="relative bg-cover bg-center" style={{ backgroundImage: 'url(/path/to/your/hero-image.jpg)' }}>
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="container mx-auto relative z-10 flex flex-col items-center justify-center text-white p-24">
-            <h1 className="text-5xl font-bold mb-4">FIGHT LIKE A CHAMPION</h1>
-            <div className="flex space-x-4">
+        <section className="relative bg-cover bg-center h-screen" style={{ backgroundImage: 'url(/path/to/your/hero-image.jpg)' }}>
+          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+          <div className="container mx-auto relative z-10 flex flex-col items-center justify-center text-white h-full text-center">
+            <h1 className="text-6xl font-bold mb-6">FIGHT LIKE A CHAMPION</h1>
+            <div className="flex space-x-8">
               <div className="flex flex-col items-center">
                 <Image src="/path/to/crossfit-icon.png" alt="Cross Fit" width={50} height={50} />
-                <p>Cross Fit</p>
+                <p className="mt-2 text-lg">Cross Fit</p>
               </div>
               <div className="flex flex-col items-center">
                 <Image src="/path/to/weights-icon.png" alt="Weights" width={50} height={50} />
-                <p>Weights</p>
+                <p className="mt-2 text-lg">Weights</p>
               </div>
               <div className="flex flex-col items-center">
                 <Image src="/path/to/exercises-icon.png" alt="Exercises" width={50} height={50} />
-                <p>Exercises</p>
+                <p className="mt-2 text-lg">Exercises</p>
               </div>
             </div>
           </div>
         </section>
-        <section className="container mx-auto p-4">
-          <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8">
+        <section className="container mx-auto px-4 py-16">
+          <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-8">
             <div className="w-full md:w-1/2">
-              <Image src="/path/to/your/image.jpg" alt="Training" width={600} height={400} className="rounded" />
+              <Image src="/path/to/your/image.jpg" alt="Training" width={600} height={400} className="rounded-lg" />
             </div>
             <div className="w-full md:w-1/2">
-              <h2 className="text-3xl font-bold mb-4">HOW WE GOT STARTED IN THIS BUSINESS</h2>
-              <p className="text-lg">Lorem ipsum dolor sit amet...</p>
-              <a href="/signup" className="mt-4 inline-block bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Sign Up</a>
+              <h2 className="text-4xl font-bold mb-6">HOW WE GOT STARTED IN THIS BUSINESS</h2>
+              <p className="text-lg leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+              <a href="/signup" className="mt-4 inline-block bg-red-600 text-white text-lg px-6 py-3 rounded-full hover:bg-red-700 transition duration-300">Sign Up</a>
             </div>
           </div>
         </section>

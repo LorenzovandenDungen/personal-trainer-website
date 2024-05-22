@@ -1,10 +1,9 @@
 module.exports = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./public/index.html",
+    './src/**/*.{js,ts,jsx,tsx}', // Adjust paths to match your project structure
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
